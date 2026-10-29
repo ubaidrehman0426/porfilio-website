@@ -90,6 +90,11 @@ a {
     color: currentColor;
 }
 
+.fa-laptop-code {
+    font-size: 30px;
+    color: var(--accent-clr);
+}
+
 img,
 picture {
     max-width: 100%;
@@ -379,7 +384,7 @@ small {
 }
 
 .topbar-social a:hover {
-    background: rgba(127, 255, 212, 0.1);
+    background: #D4FF16;
     color: var(--accent-clr);
 }
 
@@ -413,7 +418,7 @@ small {
 .theme-toggle:hover {
     transform: translateY(-2px);
     border-color: var(--accent-clr);
-    background: rgba(127, 255, 212, 0.1);
+    background: #D4FF16;
 }
 
 .theme-toggle svg {
@@ -620,7 +625,7 @@ small {
     transform: translateY(-2px);
     background: transparent;
     color: var(--accent-clr);
-    box-shadow: 0 0.7rem 2rem rgba(127, 255, 212, 0.1);
+    box-shadow: 0 0.7rem 2rem #D4FF16;
 }
 
 .contact-nav-link:hover i,
