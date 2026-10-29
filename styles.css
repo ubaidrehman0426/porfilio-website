@@ -4,8 +4,8 @@
     --secondary-clr: hsl(0, 0%, 11%);
     --other-clr: hsl(0, 0%, 61%);
     --tag-clr: hsl(0, 0%, 55%);
-    --accent-clr: hsl(160, 100%, 70%);
-    --accent-other-clr: hsl(166, 100%, 80%);
+    --accent-clr: #D4FF24;
+    --accent-other-clr: #D4FF20;
     --main-clr: hsl(0, 0%, 95%);
     --section-mt: clamp(4.5rem, 8vw, 8rem);
     --transition: cubic-bezier(0.25, 0.32, 0.85, 0.58);
@@ -321,7 +321,7 @@ small {
 
 .topbar {
     background: #101518;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 3px solid #D4FF16;
 }
 
 .topbar .container {
@@ -661,7 +661,7 @@ small {
 .hero {
     padding: 0 1rem;
     background-color: #000000;
-    background-image: radial-gradient( #7fffd4 1px, transparent 1px);
+    background-image: radial-gradient( #D4FF20 1px, transparent 1px);
     background-size: 30px 30px;
 }
 
@@ -1903,7 +1903,7 @@ a.contact-detail-card:hover .contact-detail-arrow {
         position: fixed;
         z-index: 1;
         inset: 12.2rem 0 0;
-        background: rgba(3, 7, 10, 0.48);
+        background: rgba(29, 61, 85, 0.48);
         animation: fade-in 180ms ease-out both;
     }
 }
@@ -2056,7 +2056,7 @@ a.contact-detail-card:hover .contact-detail-arrow {
     border: 3px solid var(--primary-clr);
     border-radius: 50%;
     background: var(--accent-clr);
-    box-shadow: 0 0 0 1px rgba(127, 255, 212, 0.4), 0 0 1.8rem rgba(127, 255, 212, 0.35);
+    box-shadow: 0 0 0 1px rgba(127, 255, 212, 0.4), 0 0 1.8rem rgba(127, 255, 212, 0.349);
     content: "";
 }
 
@@ -2250,7 +2250,7 @@ a.contact-detail-card:hover .contact-detail-arrow {
 
 .certificate-card:hover {
     transform: translateY(-5px);
-    border-color: aquamarine;
+    border-color: #D4FF24;
 }
 
 .certificate-label {
@@ -2258,7 +2258,7 @@ a.contact-detail-card:hover .contact-detail-arrow {
     padding: 0.35rem 0.8rem;
     border: 1px solid rgba(127, 255, 212, 0.45);
     border-radius: 999px;
-    color: aquamarine;
+    color: #D4FF24;
     font-size: 1.1rem;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -2272,7 +2272,7 @@ a.contact-detail-card:hover .contact-detail-arrow {
     place-items: center;
     border-radius: 12px;
     background: rgba(127, 255, 212, 0.12);
-    color: aquamarine;
+    color: #D4FF24;
     font-size: 1.8rem;
     font-weight: 800;
 }
@@ -2289,7 +2289,7 @@ a.contact-detail-card:hover .contact-detail-arrow {
 
 .certificate-issuer {
     margin-bottom: 1rem;
-    color: aquamarine;
+    color: #D4FF24;
 }
 
 .certificate-description {
@@ -2312,7 +2312,7 @@ a.contact-detail-card:hover .contact-detail-arrow {
 }
 
 .testimonials {
-    --testimonial-accent: #29ffbb;
+    --testimonial-accent: #D4FF16;
 }
 
 .testimonial-card {
@@ -2525,11 +2525,11 @@ a.contact-detail-card:hover .contact-detail-arrow {
 }
 
 .menu ul li a:hover {
-    color: aquamarine;
+    color: #D4FF24;
 }
 
 .divider {
-    color: aquamarine;
+    color: #D4FF24;
     font-size: 30px;
     font-weight: bold;
 }
