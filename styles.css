@@ -385,7 +385,7 @@ small {
 
 .topbar-social a:hover {
     background: #D4FF16;
-    color: var(--accent-clr);
+    color: black;
 }
 
 .social-nav-label {
@@ -419,6 +419,7 @@ small {
     transform: translateY(-2px);
     border-color: var(--accent-clr);
     background: #D4FF16;
+    color: #000000;
 }
 
 .theme-toggle svg {
@@ -434,11 +435,23 @@ small {
 .theme-icon-dark,
 :root[data-theme="light"] .theme-icon-light {
     display: none;
+    color: var(--accent-clr);
 }
 
 :root[data-theme="light"] .theme-icon-dark {
     display: block;
 }
+
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+
+/* Default navbar */
 
 .nav .container {
     display: flex;
@@ -449,12 +462,34 @@ small {
     z-index: 1;
     min-height: 7.2rem;
     padding: 0.8rem 1.6rem;
-    background: rgba(20, 24, 28, 0.96);
+    background: rgba(13, 13, 13, 0.96);
     margin-block-start: 1.15rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 1.4rem;
+    border-radius: 40px;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.24);
     backdrop-filter: blur(1.2rem);
+    transition: all 0.3s ease;
+}
+
+
+/* Full-width navbar when scrolling */
+
+.nav.scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(13, 13, 13, 0.96);
+    backdrop-filter: blur(1.2rem);
+}
+
+.nav.scrolled .container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .nav-logo h3 {
